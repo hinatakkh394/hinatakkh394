@@ -1,0 +1,125 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Shippori Mincho", sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to top,  #d87f03, #febe64f8, #cfe3ed);
+      color: #262626c3;
+      scroll-behavior: smooth;
+    }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: white;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+    color: #fff;
+  cursor: pointer;
+  display: block;
+    opacity: 0.5;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 2rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0.5rem 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+
+    header {
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1em;
+      animation: fadeInDown 1.5s ease;
+    }
+
+
+
+    section {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .project-card:hover {
+      background: #fcfaf1;
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #422301;
+      color: white;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    a {
+  text-decoration: none;
+  color: #efecec;
+  font-size: 1.2rem;
+}
+
+i {
+  margin-right: 8px;
+}
+
+
+
